@@ -8,7 +8,7 @@ Bu projede HuggingFaceM4/FGVC-Aircraft [veriseti](https://huggingface.co/dataset
 - ✅ Kolay arayüz entegrasyonu
 - ✅ FastAPI ile REST API servisi
 - ✅ Docker ile container haline getirilmiştir.
-# ARAYÜZ 
+# Arayüz
 ![image](https://github.com/user-attachments/assets/ef213b37-00df-48f9-b6cd-531212d669a4)
 
 
