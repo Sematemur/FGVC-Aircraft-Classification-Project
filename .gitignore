@@ -1,0 +1,11 @@
+
+dosyalar/__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+env/
+Backend/best_model.pth
+venv/
+ENV/
+*.pth

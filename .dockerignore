@@ -1,0 +1,31 @@
+# Gereksiz klasörler
+node_modules
+__pycache__/
+build/
+dist/
+tmp/
+venv/
+env/
+.cache/
+.idea/
+.vscode/
+
+# Gizli dosyalar
+*.env
+*.pem
+*.key
+*.crt
+
+# Gereksiz dosya türleri
+*.log
+*.pyc
+*.pyo
+*.db
+*.sqlite3
+*.zip
+*.tar.gz
+
+# Git ile ilgili dosyalar
+.git
+.gitignore
+.gitattributes
