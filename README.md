@@ -16,4 +16,7 @@ Bu projede HuggingFaceM4/FGVC-Aircraft [veriseti](https://huggingface.co/dataset
 
 # Arayüz
 ![image](https://github.com/user-attachments/assets/ef213b37-00df-48f9-b6cd-531212d669a4)
+##  ViT Model Değerlendirme Sonuçları
+<img width="378" height="82" alt="image" src="https://github.com/user-attachments/assets/96b1f7cd-fe55-45d3-971a-70833707606b" />
+
 
