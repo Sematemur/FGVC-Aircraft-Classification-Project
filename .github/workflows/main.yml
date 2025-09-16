@@ -1,23 +1,26 @@
-# .github/workflows/streamlit-app.yml
-name: Streamlit app
+name: CI/CD Pipeline
 
 on:
   push:
-    branches: ["main"]
-  pull_request:
-    branches: ["main"]
-
-permissions:
-  contents: read
+    branches:
+      - main   # sadece main branch'e push olunca çalışır
 
 jobs:
-  streamlit:
+  build-and-push:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Log in to Docker Hub
+        uses: docker/login-action@v2
         with:
-          python-version: "3.11"
-      - uses: streamlit/streamlit-app-action@v0.0.3
-        with:
-          app-path: dosyalar/arayuz.py
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
+
+      - name: Build Docker image
+        run: docker build -t ${{ secrets.DOCKER_USERNAME }}/streamlit-app:latest .
+
+      - name: Push Docker image
+        run: docker push ${{ secrets.DOCKER_USERNAME }}/streamlit-app:latest
