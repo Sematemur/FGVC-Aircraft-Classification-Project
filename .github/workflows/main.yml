@@ -20,4 +20,4 @@ jobs:
           python-version: "3.11"
       - uses: streamlit/streamlit-app-action@v0.0.3
         with:
-          app-path: dosyalar/arayuz.py
+          app-path: arayuz.py
